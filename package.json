@@ -13,5 +13,8 @@
     "url": "https://github.com/Saragar710"
   },
   "author": "Sara Garcia",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
