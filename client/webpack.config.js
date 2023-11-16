@@ -26,8 +26,9 @@ module.exports = () => {
         swSrc: './src-sw.js',
         swDest: 'src-sw.js',
       }),
+      new WorkboxPlugin.GenerateSW(),
       new WebpackPwaManifest({
- 
+   
       })
       
     ],
@@ -38,6 +39,12 @@ module.exports = () => {
           test: /\.css$/i,
           use: ['style-loader', 'css-loader'],
         },
+        {
+          test: /\.(png)$/i,
+          type: 'assets/resources'
+          //type:'src/images' 
+        
+        }
         {
           test: /\.m?js$/,
       exclude: /(node_modules)/,
