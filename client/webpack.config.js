@@ -27,7 +27,7 @@ module.exports = () => {
         swDest: 'src-sw.js',
       }),
       new WebpackPwaManifest({
-
+ 
       })
       
     ],
