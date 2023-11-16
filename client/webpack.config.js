@@ -44,7 +44,7 @@ module.exports = () => {
           type: 'assets/resources'
           //type:'src/images' 
         
-        }
+        },
         {
           test: /\.m?js$/,
       exclude: /(node_modules)/,
