@@ -40,7 +40,7 @@ module.exports = () => {
           use: ['style-loader', 'css-loader'],
         },
         {
-          test: /\.(png)$/i,
+          test: /\.(png|svg|jpg|jpeg|gif)$/i,
           type: 'assets/resources'
           //type:'src/images' 
         
