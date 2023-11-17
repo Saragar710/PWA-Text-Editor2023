@@ -32,9 +32,10 @@ new StaleWhileRevalidate({
   cacheName: 'asset-cache',
   plugins: [
     
-    new CacheableResponsePlugin({
+    new offlineFallback({
       statuses: [0, 200],
-    }),
-  ],
-})
+    })
+  ]
+});
+
 registerRoute();
