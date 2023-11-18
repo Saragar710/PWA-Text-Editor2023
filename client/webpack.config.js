@@ -28,8 +28,22 @@ module.exports = () => {
       }),
       new WorkboxPlugin.GenerateSW(),
       new WebpackPwaManifest({
+        name: 'JATE',
+        short_name: 'JATE',
+        description: 'Another Text Editor',
+        background_color: '#99ccff',
+        theme_color: '#99ccff',
+        start_url: './',
+        publicPath:'./',
+        icons: [
+          {
+          src: path.resolve('src/images/logo.png'),
+          sizes: [96,128,192,256,384.512],
+          destination: path.join('assets', 'icons'),
+          },
+        ],
    
-      })
+      }),
       
     ],
 
